@@ -33,7 +33,7 @@ jobs:
 
       - name: Connect to Redis
         # Runs JavaScript to creat a Redis client, populate data and read data
-        run:  node redisclient.js
+        run:  npm start
         # Environment variable are passed to JavaScript to create Redis client
         env:
           # As the host name service container name(label) is passed
