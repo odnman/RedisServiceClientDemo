@@ -1,11 +1,10 @@
-// const redis = require('redis')
-import { createClient } from 'redis';
+const redis = require("redis");
 
 
 // Creates a new Redis client
 // In the workflow we are going to set REDIS_HOST and REDIS_PORT
 
-const redisClient = createClient({
+const redisClient = redis.createClient({
     host: process.env.REDIS_HOST,
     port: process.env.REDIS_PORT
 });

@@ -8,7 +8,7 @@ jobs:
     # Runner for the container job. Containers have to run on Linux
     runs-on: ubuntu-latest
     # We are using a node container image from docker hub to run the JavaScript
-    container: node:10.18-jessie
+    container: node:18.3.0
     # Service containers to run with `container-job`
     services:
     # Name for the service container
