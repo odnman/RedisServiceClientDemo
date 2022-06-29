@@ -42,5 +42,5 @@ redisClient.hkeys("german", function(err, germankeys) {
         });
     });
     redisClient.quit();
-})
+});
 
