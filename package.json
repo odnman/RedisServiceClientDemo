@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/odnman/RedisServiceClientDemo#readme",
   "dependencies": {
-    "redis": "^4.1.0"
+    "redis": "2.8.0"
   }
 }

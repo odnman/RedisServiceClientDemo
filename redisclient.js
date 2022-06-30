@@ -15,13 +15,13 @@ redisClient.on("error", function(err) {
 
 redisClient.set('hello', 'world', redis.print);
 
-redisClient.hSet('spanish', 'red', 'rojo', redis.print);
-redisClient.hSet('spanish', 'orange', 'naranja', redis.print);
-redisClient.hSet('spanish', 'blue', 'azul', redis.print)
+redisClient.hset('spanish', 'red', 'rojo', redis.print);
+redisClient.hset('spanish', 'orange', 'naranja', redis.print);
+redisClient.hset('spanish', 'blue', 'azul', redis.print)
 
-redisClient.hSet('german', 'red', 'rot', redis.print)
-redisClient.hSet('german', 'orange', 'orange', redis.print)
-redisClient.hSet('german', 'blue', 'blau', redis.print);
+redisClient.hset('german', 'red', 'rot', redis.print)
+redisClient.hset('german', 'orange', 'orange', redis.print)
+redisClient.hset('german', 'blue', 'blau', redis.print);
 
 redisClient.get('hello', (err, value) => {
     if(err) console.log(err);
